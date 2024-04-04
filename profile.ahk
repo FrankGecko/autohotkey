@@ -15,12 +15,4 @@
 	Send "{Ctrl up}"
 }
 
-~LShift::
-{
-	if (KeyWait("LShift", "T0.15"))
-	{
-		SetCapsLockState !GetKeyState("CapsLock", "T")
-		return
-	}
-	KeyWait "LShift"
-}
+LCtrl::CapsLock
