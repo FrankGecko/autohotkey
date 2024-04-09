@@ -8,7 +8,7 @@
 <h3>profile</h3>
 <p>The following are the profile's defined hotkeys</p>
 <h4>CapsLock</h4>
-<p>`CapsLock` rebound to `Ctrl`, and if the key is released without pressing any other key, will send an `Escape` press.</p>
+<p>`CapsLock` rebound to `Ctrl`, and if `CapsLock` is then released without pressing any other key, the script sends an `Escape` press.</p>
 <h4>Left Ctrl</h4>
 <p>`LCtrl` rebound to `CapsLock`.</p>
 <h2>Troubleshooting</h2>
