@@ -3,16 +3,18 @@
 
 *CapsLock::
 {
-	Send "{Ctrl down}"
-	if (KeyWait("CapsLock", "T0.15"))
-	{
-		Send "{Ctrl up}"
-		Send "{Escape}"
-		return
-	}
+	thisKey := "CapsLock"
 
-	KeyWait "CapsLock"
+	Send "{Ctrl down}"
+	KeyWait(thisKey)
 	Send "{Ctrl up}"
+
+	pressedNoNewKey := A_PriorKey = thisKey	
+	
+	if (pressedNoNewKey)
+	{
+		Send "{Escape}"
+	}
 }
 
-LCtrl::CapsLock
+ LCtrl::CapsLock
