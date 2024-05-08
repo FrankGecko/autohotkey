@@ -5,9 +5,9 @@
 {
 	thisKey := "CapsLock"
 
-	Send "{Ctrl down}"
+	Send "{LControl down}"
 	KeyWait(thisKey)
-	Send "{Ctrl up}"
+	Send "{LControl up}"
 
 	pressedNoNewKey := A_PriorKey = thisKey	
 	
